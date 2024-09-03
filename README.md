@@ -25,16 +25,19 @@ The Shoe Inventory Management System is a simple Python application designed to 
 Run the following command:
 1. `python inventory.py`
    
-3. Follow the on-screen menu to interact with the system:
+2. Follow the on-screen menu to interact with the system:
 
-- **1 - Read Shoes Data**
-- **2 - Capture New Shoes**
-- **3 - View All Shoes**
-- **4 - Re-stock Shoes**
-- **5 - Search For A Shoe**
-- **6 - Calculate Value Per Item**
-- **7 - Check Product With Highest Quantity**
-- **8 - Exit**
+## Functions
+
+- `read_shoes_data(display_message=False)`: Reads and parses shoe data from inventory.txt.
+- `capture_shoes()`: Prompts the user to input new shoe details and updates the inventory.
+- `view_all()`: Prints out all shoe details and displays a formatted table.
+- `re_stock()`: Finds the shoe with the lowest quantity and allows the user to restock it.
+- `search_shoe()`: Searches for a shoe by SKU code.
+- `value_per_item()`: Calculates and displays the total value of each shoe in inventory.
+- `highest_qty()`: Identifies the shoe with the highest quantity and optionally applies a discount.
+- `update_file()`: Writes the current inventory data back to inventory.txt.
+- `main_menu()`: Displays the main menu and handles user input.
 
 ## Notes
 
